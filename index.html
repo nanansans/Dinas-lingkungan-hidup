@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinas Lingkungan Hidup Provinsi Jawa Barat</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f7f9;
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    background: linear-gradient(90deg, #0f4c75, #3282b8);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #bbe1fa;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(15,76,117,0.8), rgba(50,130,184,0.8)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: white;
+    color: #0f4c75;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #bbe1fa;
+}
+
+/* SECTION */
+section {
+    padding: 60px 50px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #0f4c75;
+}
+
+/* LAYANAN */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #3282b8;
+}
+
+/* STATISTIK */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-box {
+    background: #3282b8;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
+}
+
+.stat-box h3 {
+    font-size: 30px;
+}
+
+/* FORM */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #0f4c75;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3282b8;
+}
+
+/* FOOTER */
+footer {
+    background: #0f4c75;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:768px){
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <h1>Dinas Lingkungan Hidup Jabar</h1>
+    <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#berita">Berita</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <div>
+        <h2>Mewujudkan Jawa Barat Bersih dan Berkelanjutan</h2>
+        <p>Pelayanan informasi dan pengelolaan lingkungan hidup untuk masyarakat Jawa Barat</p>
+        <a href="#layanan" class="btn">Lihat Layanan</a>
+    </div>
+</div>
+
+<section id="profil">
+    <h2 class="section-title">Profil Dinas</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Dinas Lingkungan Hidup Provinsi Jawa Barat berperan dalam pengelolaan,
+        pengawasan, dan perlindungan lingkungan hidup guna mewujudkan pembangunan berkelanjutan.
+    </p>
+</section>
+
+<section id="layanan">
+    <h2 class="section-title">Layanan Masyarakat</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Pengaduan Lingkungan</h3>
+            <p>Laporkan pencemaran atau kerusakan lingkungan secara online.</p>
+        </div>
+        <div class="card">
+            <h3>Perizinan Lingkungan</h3>
+            <p>Pengajuan UKL-UPL dan AMDAL secara digital.</p>
+        </div>
+        <div class="card">
+            <h3>Informasi Kualitas Udara</h3>
+            <p>Cek indeks kualitas udara terkini di wilayah Jawa Barat.</p>
+        </div>
+        <div class="card">
+            <h3>Program Bank Sampah</h3>
+            <p>Informasi lokasi dan program bank sampah aktif.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Statistik Lingkungan</h2>
+    <div class="stats">
+        <div class="stat-box">
+            <h3 id="udara">75</h3>
+            <p>Indeks Kualitas Udara</p>
+        </div>
+        <div class="stat-box">
+            <h3>120+</h3>
+            <p>Bank Sampah Aktif</p>
+        </div>
+        <div class="stat-box">
+            <h3>350+</h3>
+            <p>Laporan Ditangani</p>
+        </div>
+    </div>
+</section>
+
+<section id="berita">
+    <h2 class="section-title">Berita & Informasi</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Gerakan Tanam 1 Juta Pohon</h3>
+            <p>Program penghijauan serentak di seluruh wilayah Jawa Barat.</p>
+        </div>
+        <div class="card">
+            <h3>Pengelolaan Sampah Terpadu</h3>
+            <p>Strategi baru pengelolaan sampah berbasis masyarakat.</p>
+        </div>
+    </div>
+</section>
+
+<section id="kontak">
+    <h2 class="section-title">Form Pengaduan</h2>
+    <form onsubmit="kirimPesan(event)">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Isi Pengaduan" required></textarea>
+        <button type="submit">Kirim Pengaduan</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Dinas Lingkungan Hidup Provinsi Jawa Barat
+</footer>
+
+<script>
+function kirimPesan(e){
+    e.preventDefault();
+    alert("Pengaduan berhasil dikirim. Terima kasih!");
+}
+</script>
+
+</body>
+</html>
